@@ -1,0 +1,121 @@
+.box {
+  width: 600px;
+  height: 400px;
+  background: lightblue;
+  margin: 80px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-face {
+  width: 150px;
+  height: 100px;
+  background: rgb(1, 177, 253);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo-face::before {
+  content: "";
+  width: 15px;
+  height: 20px;
+  background: rgb(1, 177, 253);
+  border-radius: 15px;
+
+  position: absolute;
+  bottom: -10px;
+  left: 30px;
+}
+
+.logo-face::after {
+  content: "";
+  width: 15px;
+  height: 20px;
+  background: rgb(1, 177, 253);
+  border-radius: 15px;
+
+  position: absolute;
+  bottom: -10px;
+  right: 30px;
+}
+
+.logo-face-inner {
+  width: 110px;
+  height: 70px;
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+}
+
+.left-line {
+  width: 35px;
+  height: 12px;
+  border-radius: 12px;
+  background: rgb(1, 177, 253);
+  transform: rotate(45deg);
+
+  position: absolute;
+  top: -10px;
+  left: 30px;
+}
+
+.right-line {
+  width: 35px;
+  height: 12px;
+  border-radius: 12px;
+  background: rgb(1, 177, 253);
+  transform: rotate(-45deg);
+
+  position: absolute;
+  top: -10px;
+  right: 30px;
+}
+
+.left-eye {
+  width: 22px;
+  height: 12px;
+  background: rgb(1, 177, 253);
+  transform: rotate(-15deg);
+
+  position: absolute;
+  top: 35px;
+  left: 35px;
+}
+
+.right-eye {
+  width: 22px;
+  height: 12px;
+  background: rgb(1, 177, 253);
+  transform: rotate(15deg);
+
+  position: absolute;
+  top: 35px;
+  right: 35px;
+}
+
+.left-nose {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  box-shadow: 3px 9px 0px rgb(1, 177, 253);
+
+  position: absolute;
+  left: 63%;
+  margin-left: -40px;
+  bottom: 40px;
+}
+
+.right-nose {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  box-shadow: -3px 9px 0px rgb(1, 177, 253);
+
+  position: absolute;
+  right: 63%;
+  margin-right: -40px;
+  bottom: 40px;
+}
