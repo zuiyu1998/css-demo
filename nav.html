@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../staic/css/semantic.min.css" />
+    <link rel="stylesheet" href="../staic/css/style.css" />
+    <script src="../staic/js/jquery-3.1.1.min.js"></script>
+    <script src="../staic/js/semantic.min.js"></script>
+    <title>导航</title>
+  </head>
+  <body>
+    <div class="ui container">
+      <div class="ui red inverted menu nav">
+        <div class="item">首页</div>
+        <div class="ui pointing dropdown link item">
+          <span class="text">生活笔记</span>
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a href="" class="item">个人计划</a>
+          </div>
+        </div>
+        <div class="item">技术杂谈</div>
+        <div class="item">教程</div>
+
+        <div class="right menu">
+          <div class="item">
+            <div class="ui icon input">
+              <input type="text" placeholder="Search..." />
+              <i class="search icon"></i>
+            </div>
+          </div>
+          <a class="item">注册</a>
+          <a class="item">帮助</a>
+        </div>
+    </div>
+
+    <script src="../staic/js/vue.js"></script>
+    <script>
+      $(".ui.dropdown").dropdown("show");
+    </script>
+  </body>
+</html>
