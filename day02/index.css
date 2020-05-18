@@ -1,0 +1,36 @@
+.test1 {
+  height: 80px;
+  background-color: red;
+}
+
+.test2 {
+  height: 40px;
+  width: 40px;
+  background-color: blue;
+
+  position: fixed;
+  left: 40px;
+  bottom: 20px;
+}
+
+.test3 {
+  height: 40px;
+  width: 40px;
+  background-color: blue;
+
+  position: relative;
+  left: 40px;
+  top: 40px;
+  /* bottom: 50px; */
+}
+
+.test4 {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+
+  position: absolute;
+  /* left: 40px; */
+  /* top: 40px; */
+  bottom: 50px;
+}
